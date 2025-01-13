@@ -9,6 +9,7 @@ async function fetchnews() {
         const response = await axios.get(`https://newsapi.org/v2/everything?q=tesla&from=2024-12-13&sortBy=publishedAt&apiKey=${API_KEY}`)
         // console.log(response);
         
+        
         let data = await response.data;
         return data
 }
